@@ -1,0 +1,62 @@
+
+In place of the expected mex file this placeholder file was executed:
+
+  Screen
+
+This mex file seems to be missing or inaccessible on your Matlab path or it is dysfunctional:
+
+  Screen.mexw64
+
+It is important that the folder which contains the Screen mex file is located *before*
+the PsychBasic folder on your Matlab path.
+On Matlab V7.4 (R2007a) or later versions, the folder
+C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\ must be before the folder
+C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychBasic\ 
+
+type path to display the current path and check for this condition.
+If the order is wrong, simply cd into your Psychtoolbox root folder
+C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\ and then run SetupPsychtoolbox again.
+That is the simplest way of fixing such path problems - Or to get more diagnostic output.
+
+Another reason could be insufficient access permissions or 
+some missing 3rd party libraries on your system.
+
+On Microsoft Windows with supported Matlab versions (>= V7.4) it could also be that
+the required Visual C++ 2010 runtime libraries are missing on your system.
+The Psychtoolbox/PsychContributed/ subfolder contains installer files for them, which
+you can execute after quitting Matlab. The name of the file is vcredist_x64.exe
+
+
+
+A very simple test call to the Screen() MEX file failed in AssertOpenGL, indicating
+that either Screen is totally dysfunctional, or you are trying to run your script on
+a system without Psychtoolbox-3 properly installed - or not installed at all.
+
+This script or function is designated to run only an Psychtoolbox based on OpenGL. Read "help  AssertOpenGL" for more info.
+
+A first more diagnostic test would be to simply type Screen in your Matlab/Octave console and check what its output is.
+
+
+
+The returned error message by Matlab/Octave was:
+Last Error: Error using ==> <a href="matlab: opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychOneliners\AssertMex.m',177,0)">AssertMex at 177</a>
+Missing or dysfunctional Psychtoolbox Mex file for this operating system. Read the help text above carefully!! ()
+    <a href="matlab:opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychOneliners\AssertMex.m',177)">C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychOneliners\AssertMex.m,177</a>
+    <a href="matlab:opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychBasic\Screen.m',162)">C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychBasic\Screen.m,162</a>
+    <a href="matlab:opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychOneliners\AssertOpenGL.m',99)">C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychOneliners\AssertOpenGL.m,99</a>
+    <a href="matlab:opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\global-local\global_local.m',138)">C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\global-local\global_local.m,138</a>
+
+{??? Error using ==> <a href="matlab: opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychOneliners\AssertOpenGL.m',174,0)">AssertOpenGL at 174</a>
+Problems detected in call to AssertOpenGL;
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\global-local\global_local.m',138,0)">global_local at 138</a>
+AssertOpenGL;
+} 
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+global_local
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\global-local\global_local.m',33,1)">global_local at 33</a>

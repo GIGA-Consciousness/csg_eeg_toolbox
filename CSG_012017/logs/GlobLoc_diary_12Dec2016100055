@@ -1,0 +1,165 @@
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+
+In place of the expected mex file this placeholder file was executed:
+
+  Screen
+
+This mex file seems to be missing or inaccessible on your Matlab path or it is dysfunctional:
+
+  Screen.mexw64
+
+It is important that the folder which contains the Screen mex file is located *before*
+the PsychBasic folder on your Matlab path.
+On Matlab V7.4 (R2007a) or later versions, the folder
+C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\ must be before the folder
+C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\PsychBasic\ 
+
+type path to display the current path and check for this condition.
+If the order is wrong, simply cd into your Psychtoolbox root folder
+C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox\ and then run SetupPsychtoolbox again.
+That is the simplest way of fixing such path problems - Or to get more diagnostic output.
+
+Another reason could be insufficient access permissions or 
+some missing 3rd party libraries on your system.
+
+On Microsoft Windows with supported Matlab versions (>= V7.4) it could also be that
+the required Visual C++ 2010 runtime libraries are missing on your system.
+The Psychtoolbox/PsychContributed/ subfolder contains installer files for them, which
+you can execute after quitting Matlab. The name of the file is vcredist_x64.exe
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+
+
+
+A very simple test call to the Screen() MEX file failed in AssertOpenGL, indicating
+if system_dependent('IsDebugMode')==1, dbstep; end
+that either Screen is totally dysfunctional, or you are trying to run your script on
+if system_dependent('IsDebugMode')==1, dbstep; end
+a system without Psychtoolbox-3 properly installed - or not installed at all.
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+help randi
+  i=Randi(n,[dims])
+  Returns a random integer sample from 1:n. The optional second argument
+  may be used to specify the size of the returned array of independent
+  samples. E.g. randi(100,[3,3]) returns a 3x3 array of independent samples
+  drawn from the range 1:100. Also see RAND, RANDN, RandSample, Sample, and
+  Shuffle.
+  
+  We assume that n is a positive integer, and rely on the fact that RAND
+  never returns 0 or 1.
+  
+  Randi(n) is similar to David Brainard's Ranint(n).
+
+    Overloaded methods:
+       <a href="matlab:help RandStream/randi">RandStream/randi</a>
+
+    Reference page in Help browser
+       <a href="matlab:doc randi">doc randi</a>
+
+builtin('cd','C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox');
+DownloadPsychtoolbox('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox')
+DownloadPsychtoolbox('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox','beta','')
+Requested flavor is: beta
+Requested location for the Psychtoolbox folder is inside: C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox
+
+Good. Your privileges suffice for the requested installation into folder C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox.
+
+Hmm. You already have an old Psychtoolbox folder:
+C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\Psychtoolbox
+That old Psychtoolbox should be removed before we install a new one.
+First we remove all references to "Psychtoolbox" from the MATLAB / OCTAVE path.
+Success.
+Shall I delete the old Psychtoolbox folder and all its contents 
+(recommended in most cases), (yes or no)? yes
+Now we delete "Psychtoolbox" itself.
+Success.
+
+Hmm. You already have an old Psychtoolbox folder:
+C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox-3-Psychtoolbox-3-1ed2856\PsychSourceGL\Projects\MacOSX\PsychToolbox
+That old Psychtoolbox should be removed before we install a new one.
+WARNING: Your old Psychtoolbox folder lacks a Contents.m file. 
+Maybe it contains stuff you want to keep. Here's a DIR:
+
+.                                          Info-MachAbsoluteTimeClockFrequency.plist  
+..                                         Info-PsychSound.plist                      
+ARToolkitLibs                              Info-StoreBit.plist                        
+English.lproj                              PsychToolbox.xcodeproj                     
+Info-CocoaEventBridge.plist                PsychToolbox64.xcodeproj                   
+Info-Eyelink.plist                         libARvideo-Intel.a                         
+Info-Gestalt.plist                         libHIDUtilities-Intel.a                    
+Info-GetBusFrequencyMex copy.plist         libHIDUtilities.a                          
+Info-IOPort.plist                          
+
+First we remove all references to "Psychtoolbox" from the MATLAB / OCTAVE path.
+Success.
+Shall I delete the old Psychtoolbox folder and all its contents 
+(recommended in most cases), (yes or no)? yes
+Now we delete "Psychtoolbox" itself.
+Success.
+
+I will now download the latest Psychtoolbox for Windows.
+Requested flavor is: beta
+Target folder for installation: C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox
+The following CHECKOUT command asks the Subversion client to 
+download the Psychtoolbox:
+svn checkout  https://github.com/Psychtoolbox-3/Psychtoolbox-3/branches/beta/Psychtoolbox/ "C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox"
+Downloading. It's nearly 100 MB, which can take many minutes. 
+Alas there may be no output to this window to indicate progress until the download is complete. 
+Please be patient ...
+If you see some message asking something like "accept certificate (p)ermanently, (t)emporarily? etc."
+then please press the p key on your keyboard, possibly followed by pressing the ENTER key.
+
+'svn' is not recognized as an internal or external command, 
+operable program or batch file. 
+Sorry, the download command "CHECKOUT" failed with error code 1: 
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+The download failure might be due to temporary network or server problems. You may want to try again in a
+few minutes. It could also be that the subversion client was not (properly) installed. On Microsoft
+Windows you will need to exit and restart Matlab or Octave after installation of the Subversion client. If that
+does not help, you will need to reboot your machine before proceeding.
+Another reason for download failure could be if an old working copy - a Psychtoolbox folder - still exists.
+In that case, it may help to manually delete that folder. Or maybe you do not have write permissions for the target folder?
+
+{??? Error using ==> <a href="matlab: opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\DownloadPsychtoolbox.m',788,0)">DownloadPsychtoolbox at 788</a>
+Download failed.
+} 
+DownloadPsychtoolbox('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox')
+DownloadPsychtoolbox('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox','beta','')
+Requested flavor is: beta
+Requested location for the Psychtoolbox folder is inside: C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox
+
+Good. Your privileges suffice for the requested installation into folder C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox.
+
+I will now download the latest Psychtoolbox for Windows.
+Requested flavor is: beta
+Target folder for installation: C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox
+The following CHECKOUT command asks the Subversion client to 
+download the Psychtoolbox:
+svn checkout  https://github.com/Psychtoolbox-3/Psychtoolbox-3/branches/beta/Psychtoolbox/ "C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\Psychtoolbox"
+Downloading. It's nearly 100 MB, which can take many minutes. 
+Alas there may be no output to this window to indicate progress until the download is complete. 
+Please be patient ...
+If you see some message asking something like "accept certificate (p)ermanently, (t)emporarily? etc."
+then please press the p key on your keyboard, possibly followed by pressing the ENTER key.
+
+'svn' is not recognized as an internal or external command, 
+operable program or batch file. 
+Sorry, the download command "CHECKOUT" failed with error code 1: 
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+The download failure might be due to temporary network or server problems. You may want to try again in a
+few minutes. It could also be that the subversion client was not (properly) installed. On Microsoft
+Windows you will need to exit and restart Matlab or Octave after installation of the Subversion client. If that
+does not help, you will need to reboot your machine before proceeding.
+Another reason for download failure could be if an old working copy - a Psychtoolbox folder - still exists.
+In that case, it may help to manually delete that folder. Or maybe you do not have write permissions for the target folder?
+
+{??? Error using ==> <a href="matlab: opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\Psychotoolbox\DownloadPsychtoolbox.m',788,0)">DownloadPsychtoolbox at 788</a>
+Download failed.
+} 

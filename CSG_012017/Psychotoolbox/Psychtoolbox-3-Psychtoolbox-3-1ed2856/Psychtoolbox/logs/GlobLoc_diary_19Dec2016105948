@@ -1,0 +1,11 @@
+{??? Undefined function or variable 'AssertOpenGL'.
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Doro\Documents\Projects\GlobalLocal\global-local\global_local.m',138,0)">global_local at 138</a>
+AssertOpenGL;
+} 
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+global_local

@@ -1,0 +1,48 @@
+
+Will use ASIO enhanced Portaudio driver DLL. See Psychtoolbox/PsychSound/PortAudioLICENSE.txt
+for the exact terms of use for this dll.
+
+
+Disclaimer: "ASIO is a trademark and software of Steinberg Media Technologies GmbH."
+PTB-Warning: Although using the ASIO enabled Psychtoolbox sound driver,
+PTB-Warning: could not find any ASIO capable soundcard in your system.
+PTB-Warning: If you think you should have an ASIO card, please check your
+PTB-Warning: system for properly installed and configured drivers and retry.
+PTB-Warning: Read "help InitializePsychSound" for more info about ASIO et al.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is Windows DirectSound, Audio device name is Primary Sound Driver
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 39.977324 msecs.
+{??? Operation terminated by user during ==> <a href="matlab: opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\global-local\global_local.m',163,0)">global_local at 163</a>
+} 
+repmat(1:4,1,2)
+
+ans =
+
+     1     2     3     4     1     2     3     4
+
+repmat(1:4,1,2)
+
+ans =
+
+     1     2     3     4     1     2     3     4
+
+repmat(1:4,1,2)
+
+ans =
+
+     1     2     3     4     1     2     3     4
+
+repmat(1:4,1,2)
+
+ans =
+
+     1     2     3     4     1     2     3     4
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+global_local
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Doro\Github\EEGtoolswc\branches\brancheDC\FASST\CSG\global-local\global_local.m',33,1)">global_local at 33</a>

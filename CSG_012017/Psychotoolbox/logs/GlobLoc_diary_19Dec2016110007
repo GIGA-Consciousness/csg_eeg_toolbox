@@ -1,0 +1,6 @@
+{??? Undefined function or variable 'AssertOpenGL'.
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Doro\Documents\Projects\GlobalLocal\global-local\global_local.m',138,0)">global_local at 138</a>
+AssertOpenGL;
+} 
+pathtool;
